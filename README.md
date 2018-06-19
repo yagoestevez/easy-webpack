@@ -32,14 +32,27 @@ After the repo has been cloned successfully, install the dependencies, like this
 npm install
 ```
 
-Now you can start using. Just type:
+Now you can start using it. Just type:
 
 ```
 npm start
 ```
 
-A server will start and a new browser window will open with the result of your code updated after every changes made. 
+A server will start and a new browser window will open with boilerplate code. Just remove the boilerplate code and type your own; you will see the result of your code updated after every changes made. 
 
 Now, start building your next big thing!
+
+##### TODO
+
+- Add Sass and Pug to the template.
+- Optimize code for production.
+
+##### CONTRIBUTING
+
+If you feel like giving a hand to this project you can do so by implementing new stuff (nothing pro, remember it's Easy Webpack hehe...). You can also help by testing it and giving feedback so we all can figure out how to make it better.
+
+###### Anyways, thank you for reading!
+
+---
 
 [Yago Estévez](https://twitter.com/yagoestevez)
