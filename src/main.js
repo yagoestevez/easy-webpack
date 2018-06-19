@@ -1,5 +1,11 @@
-require( './main.css' );
+/**
+ * Brought to you by Yago Estévez. https://twitter.com/yagoestevez
+ */
+require( "babel-runtime/regenerator" );
+require( './index.html'              );
+require( './main.css'                );
 
+/* BOILERPLATE CODE. REMOVE IT TO START BUILDING YOUR NEXT THING */
 let rotate = true;
 const rotateLogo = ( ) => {
   const animation = setInterval( ( ) => {
