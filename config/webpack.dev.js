@@ -24,14 +24,21 @@ module.exports = {
   devServer: {
     contentBase: 'dist'
   },
-
+  // Defines the module rules to apply for every file extension we want to work with.
   module: {
     rules: [
       {
+        // Sets a rule for css files. The /\.css$/ part is a regular expression and it means that 
+        // every file name with a dot (\.) css in the end ($) should follow the 'use' array.
         test: /\.css$/,
+        // Gives Webpack a way to work with the matching files.
+        // NOTICE: The order of execution is reversed. The last items get executed first.
         use: [
-          { loader: 'style-loader' },
-          { loader: 'css-loader' }
+          { loader: 'style-loader' }, // Secondly, adds CSS to the DOM by injecting a <style> tag.
+                                      // More info: https://github.com/webpack-contrib/style-loader
+          { loader: 'css-loader' }    // Firstly, it interprets @import and url() like
+                                      // import/require() and will resolve them. 
+                                      // More info: https://github.com/webpack-contrib/css-loader
         ]
       }
     ]
