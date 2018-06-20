@@ -23,7 +23,7 @@ To use this template, just make a new folder and `clone` this repo:
 ```
 mkdir your-new-project
 cd your-new-project
-git clone https://github.com/yagoestevez/easy-webpack.git
+git clone https://github.com/yagoestevez/easy-webpack.git .
 ```
 
 After the repo has been cloned successfully, install the dependencies, like this:
