@@ -12,7 +12,8 @@
     "webpack",
     "template",
     "style-loader",
-    "css-loader"
+    "css-loader",
+    "sass-loader"
   ],
   "license": "MIT",
   "devDependencies": {

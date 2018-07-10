@@ -45,7 +45,6 @@ module.exports = {
       {
         // Sets a rule for css files. Also a regular expression, this time seeking .css files.
         test: /\.s?css$/,
-
         // Gives Webpack a way to work with the matching files.
         // NOTICE: The order of execution is reversed; the last items get executed first.
         use: [
