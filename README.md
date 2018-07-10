@@ -2,15 +2,12 @@
 
 This is an basic and easy to use template/recipe made for Webpack.
 
-If you want to have a **live server watching for your changes** working with a transpiler that **transforms your modern Javascript into legacy Javascript code** and a **CSS prefixer** so you don't need to code for each and every browser in the market, this template might be for you.
+If you want to have a **live server watching for your changes** working with a transpiler that **transforms your modern Javascript into legacy Javascript code**, **Sass compiler** and a **CSS prefixer** so you don't need to code for each and every browser in the market, this template might be for you.
 
 It's main purpose is to help beginners speed up their development workflow while learning HTML, CSS and Javascript without loosing their minds trying to set up Webpack. Even if Webpack nowadays is fairly easy to use for basic stuff, beginners get overwhelmed by this kind of tools quite often.
 
 Want to try this template? Beginner or not, you're more than welcome.
 <br />
-
-###### Changelog
-2018.07.10 - Added support for Sass/Scss.
 
 ##### BEFORE USING IT
 
