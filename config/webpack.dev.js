@@ -1,3 +1,6 @@
+/**
+ *  Webpack Development Configuration.
+ */
 const path                  = require( 'path' ); // Adds 'path' module to the config.
 const MiniCssExtractPlugin  = require( 'mini-css-extract-plugin' ); // Extracts CSS into files.
 
