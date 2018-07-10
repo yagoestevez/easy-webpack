@@ -9,6 +9,9 @@ It's main purpose is to help beginners speed up their development workflow while
 Want to try this template? Beginner or not, you're more than welcome.
 <br />
 
+###### Changelog
+2018.07.10 - Added support for Sass/Scss.
+
 ##### BEFORE USING IT
 
 Before you start using this template, you will need to have installed `Node.js` and `NPM`. You can [download both from here](https://nodejs.org/en/download/).

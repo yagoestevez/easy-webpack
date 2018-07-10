@@ -3,7 +3,7 @@
  */
 require( "babel-runtime/regenerator" );
 require( './index.html'              );
-require( './main.css'                );
+require( './main.scss'                );
 
 /* BOILERPLATE CODE. REMOVE IT TO START BUILDING YOUR NEXT THING */
 let rotate = true;

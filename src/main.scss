@@ -6,7 +6,11 @@
 /*
  *  BOILERPLATE CODE. REMOVE IT TO START BUILDING YOUR NEXT THING
  */
-@import 'https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Source+Sans+Pro:400,400i,500,600';
+@import url('https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Source+Sans+Pro:400,400i,500,600');
+
+$light-color      : #fcfcfc;
+$background-color : #1d78c1;
+$key-color        : #e7f403;
 
 :root, * {
   box-sizing        : border-box;
@@ -14,24 +18,24 @@
   margin            : 0;
 }
 
-html {
+html, body {
   height            : 100%;
+  height            : 100%; 
 }
 
 body {
-  background        : #1D78C1;
-  color             : #fcfcfcdd;
+  background        : $background-color;
+  color             : rgba( $light-color, .7 );
   font-family       : 'Source Sans Pro', sans-serif;
   line-height       : 4rem;
   display           : flex;
   flex-direction    : column; 
   justify-content   : center;
   align-items       : center; 
-  height            : 100%; 
 }
 
   h1 {
-    color           : #fcfcfc;
+    color           : $light-color;
     font-size       : 4rem;
     font-family     : 'Gloria Hallelujah', sans-serif;
     font-style      : italic;
@@ -39,62 +43,58 @@ body {
   }
 
   h2 {
-    color           : #fcfcfc;
+    color           : $light-color;
     font-size       : 2rem;
     margin-top      : 1rem;
-  }
 
-    h2 span {
-      color         : #E7F403;
+    span {
+      color         : $key-color;
       font-size     : 2rem;
     }
-  
-  h3 {
-    font-size       : 1.2rem;
+
   }
 
-    h3 code {
-      background    : #E7F403;
-      color         : #1D78C1;
+  h3 {
+    font-size       : 1.2rem;
+
+    code {
+      background    : $key-color;
+      color         : $background-color;
       padding       : .4rem;
       margin        : 0 .4rem;
       font-weight   : normal;
     }
 
+  }
+
   hr {
     width           : 40vw;
     margin-top      : 2rem;
-    color           : #8dd6f980;
+    color           : rgba( lighten( saturate( $background-color, 30% ), 30% ), .6 );
   }
 
   a, a:visited {
-    color           : #E7F403;
+    color           : $key-color;
     text-decoration : none;
     transition      : color 300ms;
-  }
 
-  a:hover, a:active {
-    color           : #fcfcfc;
+    &:hover, &:active {
+      color           : $light-color;
+    }
+
   }
 
 
 .cube {
   position                : relative;
   display                 : block;
-  -webkit-transform-style : preserve-3d;
-          transform-style : preserve-3d;
-  -webkit-transform       : rotateX(-33.5deg) rotateY(45deg);
-          transform       : rotateX(-33.5deg) rotateY(45deg);
-  }
+  transform-style         : preserve-3d;
+  transform               : rotateX(-33.5deg) rotateY(45deg);
 
   .cube__inner, .cube__outer {
     display                 : inline-block;
-    -webkit-transform-style : preserve-3d;
-            transform-style : preserve-3d;
-    -webkit-transition      : -webkit-transform 1000ms;
-    transition              : -webkit-transform 1000ms;
+    transform-style         : preserve-3d;
     transition              : transform 1000ms;
-    transition              : transform 1000ms, -webkit-transform 1000ms;
   }
 
   .cube__inner {
@@ -107,18 +107,17 @@ body {
     position                : absolute;
     width                   : 100%;
     height                  : 100%;
-    border                  : 1px solid #fcfcfc;
+    border                  : 1px solid $light-color;
   }
 
-  .cube .cube__outer .cube__face {
-    background              : #8dd6f980;
-    -webkit-transition      : border-width 0.2s;
-    transition              : border-width 0.2s;
-    -webkit-transition-delay: 0.2s;
-            transition-delay: 0.2s;
+  .cube__outer .cube__face {
+    background              : rgba( lighten( saturate( $background-color, 30% ), 30% ), .6 );
+    transition              : border-width 0.2s 0.2s;
   }
 
-  .cube .cube__inner .cube__face {
-    background              : #1D78C1;
-    border                  : 2px solid #fcfcfc;
+  .cube__inner .cube__face {
+    background              : $background-color;
+    border                  : 2px solid $light-color;
   }
+
+}

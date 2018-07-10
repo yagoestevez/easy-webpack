@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --config=config/webpack.dev.js --open --host 0.0.0.0",
-    "build": "webpack --config=config/webpack.dev.js"
+    "build": "webpack --config=config/webpack.prod.js"
   },
   "author": "Yago Estévez",
   "keywords": [
@@ -26,10 +26,12 @@
     "file-loader": "^1.1.11",
     "html-loader": "^0.5.5",
     "mini-css-extract-plugin": "^0.4.0",
+    "node-sass": "^4.9.2",
     "postcss-loader": "^2.1.5",
     "precss": "^3.1.2",
+    "sass-loader": "^7.0.3",
     "style-loader": "^0.21.0",
-    "webpack": "^4.12.0",
+    "webpack": "^4.15.1",
     "webpack-cli": "^3.0.8",
     "webpack-dev-server": "^3.1.4"
   }

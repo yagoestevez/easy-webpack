@@ -12,7 +12,7 @@ module.exports = {
 
   // Defines the mode to be used by Webpack (development/production).
   // More info: https://webpack.js.org/concepts/mode/
-  mode: 'development',
+  mode: 'production',
 
   // Defines the processed output to a specific location on your project structure.
   // More info: https://webpack.js.org/concepts/output/
@@ -58,7 +58,8 @@ module.exports = {
                                        // import/require() and will resolve them. 
                                        // More info: https://github.com/webpack-contrib/css-loader
             options: {
-              importLoaders: 1         // Configures how many loaders before css-loader should apply.
+              importLoaders: 1,        // Configures how many loaders before css-loader should apply.
+              minimize: true           // Compresses the CSS code.
             }
           },
           'postcss-loader',            // Adds vendor prefixes to CSS rules from Can I Use.
