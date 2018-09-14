@@ -44,8 +44,11 @@ Now, start building your next big thing!
 
 ##### TODO
 
-- Add Sass and Pug to the template.
 - Optimize code for production.
+
+##### Changelog
+
+- Added Scss support.
 
 ##### CONTRIBUTING
 
